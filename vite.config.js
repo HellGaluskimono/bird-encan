@@ -1,0 +1,21 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import svgr from "vite-plugin-svgr";
+import path from "path";
+
+export default defineConfig({
+    plugins: [react(), svgr()],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@use "@/styles/vars" as *;`
+            }
+        }
+    },
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "src"),
+            "@img": path.resolve(__dirname, "src/assets/images"),
+        },
+    },
+});

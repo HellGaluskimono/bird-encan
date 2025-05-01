@@ -1,0 +1,82 @@
+@use "@/styles/vars" as *;
+
+.header {
+  position: sticky;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 14px 0;
+  background: $white-color;
+  box-shadow: 0 0px 4px #2b00190d;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-btn {
+    border: none;
+    background: transparent;
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  &__menu-list li {
+    list-style: none;
+  }
+
+  &__menu-item {
+    color: $black-color;
+    font-size: 15px;
+    font-weight: 500;
+    &:hover {
+      color: $pink-text-dark;
+    }
+  }
+}
+
+.burger-menu {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $white-color;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+
+  .header__menu-list {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .footer-burger {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__menu-list {
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+      padding: 24px 0;
+      background: transparent;
+    }
+  }
+
+  .burger-menu {
+    display: none; 
+  }
+}

@@ -1,0 +1,58 @@
+@use "@/styles/vars" as *;
+
+.how {
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        .element-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__element {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+            max-width: 340px;
+
+            &-numb {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 36px;
+            }
+            &-text {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__arrow {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .how {
+        &-content {
+            flex-direction: row;
+            justify-content: space-between;
+            .element-wrapper {
+                flex:  1 1 280px;
+                flex-direction: row;
+                justify-content: center;
+            }
+            &__arrow {
+                transform: none;
+            }
+        }
+        
+    }
+}

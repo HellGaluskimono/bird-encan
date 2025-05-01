@@ -1,0 +1,49 @@
+@use "@/styles/vars" as *;
+
+.what {
+  background: $gray-bg-color;
+  padding: 24px 0;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    &__element {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+      max-width: 282px;
+      width: 100%;
+      flex: 1 1 320px;
+
+      &-icon {
+        max-width: 200px;
+        border-radius: 20000px;
+      }
+
+      &-text {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .what {
+    padding: 44px 0;
+
+    &-content {
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 80px;
+        row-gap: 44px;
+    }
+  }
+}

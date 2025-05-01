@@ -1,0 +1,21 @@
+@use "@/styles/vars" as *;
+
+.disclaimer-intro {
+    background: url("../../assets/images/components/bg/disclaimer-bg-Mob.webp") no-repeat center/cover;
+    padding: 116px 0;
+    margin-bottom: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 768px) {
+    .disclaimer-intro {
+        background: url("../../assets/images/components/bg/disclaimer-bg.webp") no-repeat center/cover;
+        padding: 140px 0;
+        margin-bottom: 45px;
+    }
+}

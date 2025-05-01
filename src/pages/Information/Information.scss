@@ -1,0 +1,15 @@
+@use "@/styles/vars" as *;
+
+.information-intro {
+    background: url("../../assets/images/components/bg/info&about-bg-Mob.webp") no-repeat center/cover;
+    padding: 116px 0;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .information-intro {
+        background: url("../../assets/images/components/bg/info&about-bg.webp") no-repeat center/cover;
+        padding: 140px 0;
+        margin-bottom: 45px;
+    }
+}

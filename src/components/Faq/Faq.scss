@@ -1,0 +1,56 @@
+@use "@/styles/vars" as *;
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__elem {
+    border-radius: 32px;
+    border: 1px solid #d9d9d9;
+    background: $white-color;
+    padding: 16px;
+
+    &-title {
+      background: transparent;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+      gap: 4px;
+      margin-bottom: 10px;
+
+      &__icon {
+        max-width: 28px;
+      }
+
+      span {
+        text-align: left;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+      }
+    }
+
+    &-text {
+      p {
+        font-size: 16px ;
+        font-weight: 400 ;
+        line-height: 18px ;
+        color: $gray-faq-text;
+      }
+    }
+  }
+}
+
+.faq-list__elem-text.with-spacing {
+  p {
+    margin-bottom: 1rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

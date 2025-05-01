@@ -1,0 +1,50 @@
+@use "@/styles/vars" as *;
+
+.intro {
+    background: url("../../assets/images/components/bg/intro-bg-Mob.webp") no-repeat center/cover;
+    padding: 56px 0;
+
+    &-block {
+        padding: 16px;
+        background: $white-color;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 640px;
+        margin: 0 auto;
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            &-text {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 30px;
+                color: $black-color;
+                text-align: center;
+            }
+            .pink {
+                color: $pink-text-dark;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px)  {
+    .intro {
+        background: url("../../assets/images/components/bg/intro-bg.webp") no-repeat center/cover;
+        padding: 98px 0;
+        
+        &-block {
+            padding: 40px;
+            gap: 50px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.policy-intro {
+    background: url("../../assets/images/components/bg/privacy-bg-Mob.webp") no-repeat center/cover;
+    padding: 116px 0;
+    margin-bottom: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 768px) {
+    .policy-intro {
+        background: url("../../assets/images/components/bg/privacy-bg.webp") no-repeat center/cover;
+        padding: 140px 0;
+        margin-bottom: 45px;
+    }
+}

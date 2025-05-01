@@ -1,0 +1,68 @@
+@use "@/styles/vars.scss" as *;
+
+.footer {
+    padding: 24px 0;
+    background: $footer-background;
+    color: #fff;
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        &__navigation {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &-block {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 14px;
+                text-transform: uppercase;
+                a:hover {
+                    color: $pink-text-dark;
+                }
+            }
+        }
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            span {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 27px;
+                a:hover {
+                    color: $pink-text-dark;
+                }
+            }
+            &-icon {
+                max-width: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &-inner {
+            flex-direction: row;
+            justify-content: space-between;
+            &__navigation {
+                flex-direction: row;
+                justify-content: space-between;
+                &-block {
+                    width: 348px;
+                }
+            }
+        }
+    }
+}

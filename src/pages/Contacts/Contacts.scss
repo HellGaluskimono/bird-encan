@@ -1,0 +1,27 @@
+@use "@/styles/vars" as *;
+
+.contacts-intro {
+    background: url("../../assets/images/components/bg/contact-bg-Mob.webp") no-repeat center/cover;
+    padding: 116px 0;
+    margin-bottom: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.contacts-context {
+    margin-bottom: 80px;
+}
+
+
+@media (min-width: 768px) {
+    .contacts-intro {
+        background: url("../../assets/images/components/bg/contact-bg-Mob.webp") no-repeat center/cover;
+        padding: 140px 0;
+        margin-bottom: 45px;
+    }
+    .contacts-context {
+        margin-bottom: 104px;
+    }
+}

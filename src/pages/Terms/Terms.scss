@@ -1,0 +1,23 @@
+.terms-intro {
+    background: url("../../assets/images/components/bg/terms-bg-Mob.webp") no-repeat center/cover;
+    padding: 116px 0;
+    margin-bottom: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.point {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+@media (min-width: 768px) {
+    .terms-intro {
+        background: url("../../assets/images/components/bg/terms-bg.webp") no-repeat center/cover;
+        padding: 140px 0;
+        margin-bottom: 45px;
+    }
+}

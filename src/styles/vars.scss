@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+// colors
+$pink-light-btn: #FFA2C9;
+$pink-text-dark: #FD6A96;
+$gray-bg-color: #F9F9F9;
+$gray-faq-text: #555;
+$gray-modal-text: #5D5A5A;
+$gray-what-text: #333;
+$black-color: #000;
+$white-color: #fff;
+$footer-background: #222222;
+
+// container
+$container: 1300px; //with paddings
+$container-paddings: 20px;
+
+// default page text
+$ff: 'Montserrat', sans-serif;
+$ff-btn: 'Open Sans', sans-serif;
+$fz: 20px;
+$fw: 400;
+$lh: 140%;
+
+// section
+$section-mb: 100px;
+
+// main title
+$main-title-fz: 44px;
+$main-title-lh: 46px;
+
+$main-title-fz-pc: 46px;
+
+// default title
+$title-fz: 38px;
+$title-fw: 500;
+$title-lh: 38px;
+$title-mb: 44px;
+
+// default subtitle
+$subtitle-fz: 22px;
+$subtitle-fw: 600;
+$subtitle-lh: 22px;
+
+// default text paragraph
+$text-fz: 17px;
+$text-fw: 500;
+$text-lh: 23px;
+$text-mb: 28px;
+
+// default policy title
+$policy-title-fz: 30px;
+$policy-title-fw: 700;
+$policy-title-lh: 30px;
+$policy-title-mb: 30px;
+
+// default policy text
+$policy-text-mb: 20px;
+$policy-text-fz: 17px;
+$policy-text-fw: 500;
+$policy-text-lh: 23px;
+
+
+// default btn
+$btn-max-width: 344px;
+$btn-padding: 10px 20px
